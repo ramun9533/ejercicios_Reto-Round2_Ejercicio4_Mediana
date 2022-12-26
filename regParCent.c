@@ -5,7 +5,7 @@
 void main ()
 {
 int cont = PAR, cont1 = 0;
-int vector [PAR] = {4, 6, 9, 10};
+float vector [PAR] = {4, 6, 9, 10};
 
     for (int i = 0; i < PAR; i++)
      {
@@ -14,7 +14,9 @@ int vector [PAR] = {4, 6, 9, 10};
          {   cont1++;
             if (cont1 == 1)
              {
-                printf("\n%d\t %d\n", vector[i], vector[i+1]);
+                printf("\n%0.0f\t %0.0f\n", vector[i], vector[i+1]);
+                float mediana = (vector[i] + vector[i+1]) / 2;
+                printf("\nLa mediana es %.2f\n", mediana);
              } 
          }
      }    
